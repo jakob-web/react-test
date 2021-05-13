@@ -30,13 +30,13 @@ export default function NewMovie() {
     setMovies(movies.filter((item) => item.id !== id));
   }
   function sortByTitle(){
-      movies.sort((a,b) => a.title.localeCompare(b.title))
+      movies.sort((a,b) => a.title.localeCompare(b.title));
       setMovies([...movies]);
   }
 
   function sortByGrade(){
     console.log("hej")
-    movies.sort((a, b) => b.rating - a.rating)
+    movies.sort((a, b) => b.rating - a.rating);
     setMovies([...movies]);
   }
   return (
